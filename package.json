@@ -1,0 +1,24 @@
+{
+  "name": "assignments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Ass4.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeyadxx/Assignments_zeyad-mahmoud-salah_01508484880_c45_Nodejs_Friday_Maadi_offline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/zeyadxx/Assignments_zeyad-mahmoud-salah_01508484880_c45_Nodejs_Friday_Maadi_offline/issues"
+  },
+  "homepage": "https://github.com/zeyadxx/Assignments_zeyad-mahmoud-salah_01508484880_c45_Nodejs_Friday_Maadi_offline#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
