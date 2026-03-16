@@ -48,7 +48,7 @@ export const updateOne = async ({
 };
 
 export const findById = async ({ id, model, select = "", options = {} }) => {
-  const doc = await model.findById(id).select(select);
+  const doc = model.findById(id).select(select);
   if (options?.populate) doc.populate(options.populate);
   if (options?.lean) doc.lean(options.lean);
   return await doc.exec();

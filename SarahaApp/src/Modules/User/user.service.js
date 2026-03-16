@@ -1,19 +1,11 @@
-import { Schema, Mongoose } from "mongoose";
 import { UserModel, dbService } from "../../DB/index.js";
 import { succesResponse, err } from "../../Utils/response/index.js";
-export const find = async (req, res) => {
-  try {
-    const user = await dbService.find({
-      model: UserModel,
-      select: "name email phone",
-      options: { limit: 3, lean: true },
-    });
-    return succesResponse({res,status:201,message:"Done",data:user})
-  } catch (error) {
-    console.log(error);
-   return err.InternalServerException()
-    
-  }
+import { TOKEN_SECRET_KEY } from "../../../config/config.service.js";
+import { verifyToken } from "../../Utils/tokens/token.js";
+
+export const getProfile = async (req, res) => {
+const user=req.user
+  return succesResponse({ res, status: 201, message: "Done", data: user });
 };
 
 export const create = async (req, res) => {
